@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "My Focus Blocker",
+  "version": "5.0",
+  "description": "Chặn các trang web gây xao lãng trong giờ làm việc.",
+  "permissions": [
+    "storage",
+    "webRequest",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "My Focus Blocker",
+    "default_icon": "icon48.png"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [ "blocked.html" ],
+      "matches": [ "<all_urls>" ]
+    }
+  ]
+}

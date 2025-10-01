@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cài đặt Blocker</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style> #main-content { display: none; } </style>
+</head>
+<body>
+    <div id="password-screen" class="container mt-5" style="max-width: 400px;">
+        <div class="card p-4">
+            <div id="set-password-form">
+                <h3 class="text-center mb-3">Tạo mật khẩu bảo vệ</h3>
+                <p class="text-muted text-center small">Vui lòng tạo một mật khẩu để bảo vệ cài đặt.</p>
+                <div class="mb-3">
+                    <label for="new-password" class="form-label">Mật khẩu mới</label>
+                    <input type="password" class="form-control" id="new-password">
+                </div>
+                <button id="set-password-btn" class="btn btn-primary w-100">Lưu và Bắt đầu</button>
+            </div>
+            <div id="login-form" style="display: none;">
+                <h3 class="text-center mb-3">Nhập mật khẩu</h3>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Mật khẩu</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <button id="login-btn" class="btn btn-success w-100">Mở khóa</button>
+                <p id="error-message" class="text-danger mt-2 text-center"></p>
+            </div>
+        </div>
+    </div>
+    <div id="main-content" class="container mt-4" style="max-width: 800px;">
+        <h1 class="mb-4">Quản lý quy tắc chặn</h1>
+        <div class="card p-3 mb-4">
+            <h4 class="mb-3">Thêm quy tắc mới</h4>
+            <div class="row g-3">
+                <div class="col-md-12"><label for="newSite" class="form-label">Hostname trang web</label><input type="text" class="form-control" id="newSite" placeholder="vd: youtube.com"></div>
+                <div class="col-sm-6"><label for="newStartTime" class="form-label">Từ giờ</label><input type="time" class="form-control" id="newStartTime" value="08:00"></div>
+                <div class="col-sm-6"><label for="newEndTime" class="form-label">Đến giờ</label><input type="time" class="form-control" id="newEndTime" value="18:00"></div>
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Áp dụng vào các ngày</label>
+                <div id="days-of-week">
+                    <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" value="1" id="day-mon" checked><label class="form-check-label" for="day-mon">T2</label></div>
+                    <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" value="2" id="day-tue" checked><label class="form-check-label" for="day-tue">T3</label></div>
+                    <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" value="3" id="day-wed" checked><label class="form-check-label" for="day-wed">T4</label></div>
+                    <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" value="4" id="day-thu" checked><label class="form-check-label" for="day-thu">T5</label></div>
+                    <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" value="5" id="day-fri" checked><label class="form-check-label" for="day-fri">T6</label></div>
+                    <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" value="6" id="day-sat"><label class="form-check-label" for="day-sat">T7</label></div>
+                    <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" value="0" id="day-sun"><label class="form-check-label" for="day-sun">CN</label></div>
+                </div>
+            </div>
+            <button id="addRuleButton" class="btn btn-primary mt-3">Thêm quy tắc</button>
+        </div>
+        <div class="card p-3 mb-4">
+            <h4 class="mb-3">Danh sách trắng (Whitelist)</h4>
+            <div class="mb-2">
+                <label for="whitelist" class="form-label">Các trang web trong danh sách này sẽ không bao giờ bị chặn. (mỗi trang một dòng)</label>
+                <small class="d-block text-muted mb-2">Mẹo: Nhấn "Cập nhật từ nguồn" để tải về danh sách được đề xuất cho lần sử dụng đầu tiên.</small>
+                <textarea class="form-control" id="whitelist" rows="5" placeholder="vd: business.facebook.com"></textarea>
+            </div>
+            <div class="d-flex align-items-center mt-2">
+                <button id="saveWhitelistButton" class="btn btn-secondary" style="width: 150px;">Lưu Whitelist</button>
+                <button id="updateWhitelistBtn" class="btn btn-outline-primary ms-2">Cập nhật từ nguồn</button>
+                <span id="update-status" class="ms-3 text-muted small"></span>
+            </div>
+        </div>
+        <hr>
+        <h3 class="mt-4">Danh sách quy tắc đang hoạt động</h3>
+        <div id="rulesList" class="d-grid gap-2"></div>
+        <div id="status" class="mt-3 text-success"></div>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>

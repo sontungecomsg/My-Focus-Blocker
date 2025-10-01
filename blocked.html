@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang web đã bị chặn</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        body { text-align: center; padding-top: 80px; }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container">
+        <h1 class="display-4 text-danger">TRUY CẬP BỊ CHẶN!</h1>
+        <p class="lead">Trang web này nằm trong danh sách chặn của bạn theo quy tắc đã thiết lập.</p>
+        <p>Hãy tập trung vào công việc nhé!</p>
+        <hr>
+        <p class="text-muted small">URL bị chặn:</p>
+        <p class="text-muted" style="word-break: break-all;"><small id="blocked-url"></small></p>
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const blockedUrl = urlParams.get('blocked');
+        document.getElementById('blocked-url').textContent = blockedUrl || "Không xác định";
+    </script>
+</body>
+</html>
