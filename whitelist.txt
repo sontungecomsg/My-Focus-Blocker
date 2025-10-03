@@ -29,4 +29,5 @@ youtube.com/getDatasyncIdsEndpoint
 www.youtube.com/ptracking
 /facebook.com/v[0-9.]+/
 tiktok.com/embed.js
-tiktok.com/node
+tiktok.com/node/
+
