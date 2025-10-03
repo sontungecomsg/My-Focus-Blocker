@@ -1,3 +1,4 @@
+#facebook
 business.facebook.com
 gateway.facebook.com
 edge-chat.facebook.com
@@ -8,6 +9,9 @@ www.facebook.com/plugins/
 www.facebook.com/ajax/
 adsmanager.facebook.com
 facebook.com/platform/
+/facebook.com/v[0-9.]+/
+
+#tiktok
 www.tiktok.com/sgtm/
 analytics.tiktok.com
 seller-vn.tiktok.com
@@ -20,6 +24,12 @@ business-sso.tiktok.com
 web-sg.tiktok.com
 tsr16-normal-useast1a.tiktok.com
 ads.tiktok.com
+tiktok.com/embed.js
+tiktok.com/node/
+tiktok.com/embed/
+tiktok.com/api/
+
+#youtube
 www.youtube.com/embed/
 www.youtube.com/s/player/
 www.youtube.com/youtubei/
@@ -27,7 +37,6 @@ www.youtube.com/api/
 www.youtube.com/generate_204
 youtube.com/getDatasyncIdsEndpoint
 www.youtube.com/ptracking
-/facebook.com/v[0-9.]+/
-tiktok.com/embed.js
-tiktok.com/node/
+
+
 
