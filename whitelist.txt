@@ -10,6 +10,7 @@ www.facebook.com/ajax/
 adsmanager.facebook.com
 facebook.com/platform/
 /facebook.com/v[0-9.]+/
+facebook.com/x/
 
 #tiktok
 www.tiktok.com/sgtm/
@@ -37,6 +38,7 @@ www.youtube.com/api/
 www.youtube.com/generate_204
 youtube.com/getDatasyncIdsEndpoint
 www.youtube.com/ptracking
+
 
 
 
