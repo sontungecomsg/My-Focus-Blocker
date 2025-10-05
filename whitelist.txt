@@ -29,6 +29,7 @@ tiktok.com/embed.js
 tiktok.com/node/
 tiktok.com/embed/
 tiktok.com/api/
+tiktok.com/ttwid/
 
 www.youtube.com/embed/
 www.youtube.com/s/player/
@@ -37,3 +38,4 @@ www.youtube.com/api/
 www.youtube.com/generate_204
 youtube.com/getDatasyncIdsEndpoint
 www.youtube.com/ptracking
+
