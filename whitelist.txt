@@ -10,8 +10,11 @@ adsmanager.facebook.com
 facebook.com/platform/
 facebook.com/x/
 /facebook.com/v[0-9.]+/
-
-www.tiktok.com/sgtm/
+facebook.com/oauth/
+facebook.com/privacy/
+facebook.com/images/
+facebook.com/api/
+tiktok.com/sgtm/
 analytics.tiktok.com
 seller-vn.tiktok.com
 mssdk-sg.tiktok.com
@@ -30,7 +33,7 @@ tiktok.com/node/
 tiktok.com/embed/
 tiktok.com/api/
 tiktok.com/ttwid/
-
+tiktok.com/aweme/
 www.youtube.com/embed/
 www.youtube.com/s/player/
 www.youtube.com/youtubei/
@@ -38,4 +41,3 @@ www.youtube.com/api/
 www.youtube.com/generate_204
 youtube.com/getDatasyncIdsEndpoint
 www.youtube.com/ptracking
-
